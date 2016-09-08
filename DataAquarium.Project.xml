@@ -3,7 +3,7 @@
   You can safely delete this file if no further code generation is planned.
 -->
 <project compatibility="20111118" dataModel="required" subscriptionLevel="Unlimited" name="TestTraining" prettyName="Test Training" type="Web Site Factory" codeDomProvider="VisualBasic" targetFramework="4.6" userInterface="TouchUI" pageImplementation="html" sourceControl="git" xmlns="urn:schemas-codeontime-com:data-aquarium-project">
-  <connectionString hostDatabaseSharing="false" sessionStateMode="None">Data Source=localhost;Initial Catalog=TsCustomerPortal;Integrated Security=True;</connectionString>
+  <connectionString hostDatabaseSharing="false" sessionStateMode="None">Data Source=localhost;Initial Catalog=TimberSmartWebPortal;Persist Security Info=True;User ID=timbersmartwebcustomer;Password=t1mber;</connectionString>
   <providerName>System.Data.SqlClient</providerName>
   <namespace>Timbersmart</namespace>
   <webServer run="true" port="37056">

@@ -4,7 +4,6 @@
   <columns>
     <column fieldName="CompanyID" name="CompanyID" label="Company ID" />
     <column fieldName="CompanyName" name="CompanyName" label="Company Name" />
-    <column fieldName="ConnectionString" name="ConnectionString" label="Connection String" />
     <column fieldName="CreatedBy" name="CreatedBy" label="Created By" />
     <column fieldName="CreatedOn" name="CreatedOn" label="Created On" format="g" />
     <column fieldName="ModifiedBy" name="ModifiedBy" label="Modified By" />

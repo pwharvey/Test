@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="urn:codeontime:data-map">
+  <node name="Customer" refs="2" depth="0" schema="dbo" label="Customer" schemaLabel="Dbo">
+    <node name="ConsignmentStock" refs="0" depth="1" schema="dbo" label="Consignment Stock" schemaLabel="Dbo" />
+    <node name="ConsignmentUsage" refs="0" depth="1" schema="dbo" label="Consignment Usage" schemaLabel="Dbo" />
+  </node>
+  <node name="Company" refs="1" depth="0" schema="dbo" label="Company" schemaLabel="Dbo" />
+</map>
