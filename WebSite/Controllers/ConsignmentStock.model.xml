@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="tConsignmentStock" alias="tConsignmentStock" created="2016-08-15T11:31:53" modified="2016-08-15T11:33:35" x="20" y="22" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="Customer" parentTableSchema="dbo" parentTableName="tCustomer" x="529" y="20">
+      <foreignKeyColumn columnName="CustomerID" parentColumnName="CustomerID" />
+    </foreignKey>
+    <foreignKey id="Product" parentTableSchema="dbo" parentTableName="tProduct" x="428" y="353">
+      <foreignKeyColumn columnName="ProductID" parentColumnName="ProductID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column fieldName="ConsignmentStockID" name="ConsignmentStockID" label="Consignment Stock ID" />
+    <column fieldName="CustomerID" name="CustomerID" label="Customer ID" aliasColumnName="CustomerName" aliasForeignKey="Customer" />
+    <column name="CustomerName" fieldName="CustomerName" label="Customer Name" foreignKey="Customer" />
+    <column fieldName="PacketNo" name="PacketNo" label="Packet No" />
+    <column fieldName="ProductID" name="ProductID" label="Product ID" aliasColumnName="ProductCode" aliasForeignKey="Product" />
+    <column fieldName="ProductCode" name="ProductCode" label="Product Code" foreignKey="Product" />
+    <column fieldName="Pieces" name="Pieces" label="Pieces" />
+    <column fieldName="Cube" name="Cube" label="Cube" />
+    <column fieldName="Area" name="Area" label="Area" />
+    <column fieldName="Lineal" name="Lineal" label="Lineal" />
+  </columns>
+</dataModel>

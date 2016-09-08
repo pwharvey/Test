@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataModel baseSchema="dbo" baseTable="tConsignmentUsage" alias="tConsignmentUsage" created="2016-08-15T11:42:13" modified="2016-08-15T11:42:37" x="20" y="20" xmlns="urn:schemas-codeontime-com:data-model">
+  <foreignKeys>
+    <foreignKey id="Customer" parentTableSchema="dbo" parentTableName="tCustomer" x="354" y="20">
+      <foreignKeyColumn columnName="CustomerID" parentColumnName="CustomerID" />
+    </foreignKey>
+    <foreignKey id="Product" parentTableSchema="dbo" parentTableName="tProduct" x="354" y="204">
+      <foreignKeyColumn columnName="ProductID" parentColumnName="ProductID" />
+    </foreignKey>
+  </foreignKeys>
+  <columns>
+    <column fieldName="ConsignmentUsageID" name="ConsignmentUsageID" label="Consignment Usage ID" />
+    <column fieldName="CustomerID" name="CustomerID" label="Customer ID" aliasColumnName="CustomerCode" aliasForeignKey="Customer" />
+    <column fieldName="CustomerCode" name="CustomerCode" label="Customer Code" foreignKey="Customer" />
+    <column fieldName="PacketNo" name="PacketNo" label="Packet No" />
+    <column fieldName="ProductID" name="ProductID" label="Product ID" aliasColumnName="ProductCode" aliasForeignKey="Product" />
+    <column fieldName="ProductCode" name="ProductCode" label="Product Code" foreignKey="Product" />
+    <column fieldName="ConsumedOn" name="ConsumedOn" label="Consumed On" />
+    <column fieldName="InStock" name="InStock" label="In Stock" />
+    <column fieldName="Errors" name="Errors" label="Errors" />
+    <column fieldName="SentOn" name="SentOn" label="Sent On" format="g" />
+    <column fieldName="CreatedBy" name="CreatedBy" label="Created By" />
+    <column fieldName="CreatedOn" name="CreatedOn" label="Created On" format="g" />
+    <column fieldName="ModifiedBy" name="ModifiedBy" label="Modified By" />
+    <column fieldName="ModifiedOn" name="ModifiedOn" label="Modified On" format="g" />
+  </columns>
+</dataModel>

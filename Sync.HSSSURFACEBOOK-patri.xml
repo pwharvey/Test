@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?><logs><log type="Controllers">
+  <c y="NodeSet" t="2016-08-15T11:40:00">
+    <controller name="Customer" />
+    <insert type="field">
+      <Name>ConsignmentStock</Name>
+      <Type>DataView</Type>
+      <AllowNulls>true</AllowNulls>
+      <IsPrimaryKey>false</IsPrimaryKey>
+      <IsVirtual>false</IsVirtual>
+      <Computed>false</Computed>
+      <Calculated>false</Calculated>
+      <CausesCalculate>false</CausesCalculate>
+      <OnDemand>false</OnDemand>
+      <Hidden>false</Hidden>
+      <Label>Consignment</Label>
+      <ReadOnly>false</ReadOnly>
+      <ShowInSummary>false</ShowInSummary>
+      <HtmlEncode>false</HtmlEncode>
+      <FormatOnClient>true</FormatOnClient>
+      <DataViewController>ConsignmentStock</DataViewController>
+      <DataViewId>grid1</DataViewId>
+      <DataViewFilterFields>CustomerID</DataViewFilterFields>
+      <SearchOnStart>false</SearchOnStart>
+      <AutoSelect>false</AutoSelect>
+      <ItemsLetters>false</ItemsLetters>
+      <AllowQBE>false</AllowQBE>
+      <AllowSorting>false</AllowSorting>
+      <AllowLEV>false</AllowLEV>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:40:25">
+    <controller name="Customer" />
+    <view id="editForm1" />
+    <insert type="category">
+      <HeaderText>Stock</HeaderText>
+    </insert>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:40:29">
+    <controller name="Customer" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <copy>
+      <controller name="Customer" />
+      <field name="ConsignmentStock" />
+    </copy>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:40:40">
+    <controller name="Customer" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <update>
+      <NewColumn>true</NewColumn>
+    </update>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:47:26">
+    <controller name="Customer" />
+    <view id="editForm1" />
+    <category id="c2" />
+    <delete />
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:50:31">
+    <controller name="Customer" />
+    <view id="grid1" />
+    <dataField fieldName="CompanyID" />
+    <update>
+      <Columns>5</Columns>
+    </update>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:50:40">
+    <controller name="Customer" />
+    <view id="grid1" />
+    <dataField fieldName="CustomerCode" />
+    <update>
+      <Columns>10</Columns>
+    </update>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:50:49">
+    <controller name="Customer" />
+    <view id="grid1" />
+    <dataField fieldName="CustomerName" />
+    <update>
+      <Columns>20</Columns>
+    </update>
+  </c>
+</log><log type="Application">
+  <c y="NodeSet" t="2016-08-15T11:43:35">
+    <page name="Customer" />
+    <container id="container1" />
+    <copy>
+      <page name="ConsignmentUsage" />
+      <dataView id="view1" />
+    </copy>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:43:43">
+    <page name="Customer" />
+    <dataView id="view1" />
+    <moveRef type="controller">
+      <Controller>ConsignmentUsage</Controller>
+      <View>grid1</View>
+      <DataField>CustomerID</DataField>
+    </moveRef>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:45:58">
+    <page name="Customer" />
+    <container id="container1" />
+    <copyRef type="controller">
+      <Controller>ConsignmentStock</Controller>
+    </copyRef>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:46:05">
+    <page name="Customer" />
+    <dataView id="view1" />
+    <moveRef type="controller">
+      <Controller>ConsignmentStock</Controller>
+      <View>grid1</View>
+      <DataField>CustomerID</DataField>
+    </moveRef>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:47:06">
+    <page name="Customer" />
+    <dataView id="view2" />
+    <update>
+      <Activator>Tab</Activator>
+      <Text>Usage</Text>
+    </update>
+  </c>
+  <c y="NodeSet" t="2016-08-15T11:47:17">
+    <page name="Customer" />
+    <dataView id="view3" />
+    <update>
+      <Activator>Tab</Activator>
+      <Text>Stock</Text>
+    </update>
+  </c>
+</log></logs>
